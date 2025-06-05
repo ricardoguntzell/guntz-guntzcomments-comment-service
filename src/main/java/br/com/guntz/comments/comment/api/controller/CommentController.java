@@ -1,5 +1,6 @@
 package br.com.guntz.comments.comment.api.controller;
 
+import br.com.guntz.comments.comment.api.config.exception.CommentNotFoundException;
 import br.com.guntz.comments.comment.api.model.Comment;
 import br.com.guntz.comments.comment.api.model.CommentInput;
 import br.com.guntz.comments.comment.api.model.CommentOutput;
@@ -14,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;
@@ -41,15 +43,17 @@ public class CommentController {
     }
 
     @PostMapping
-    public ResponseEntity<CommentOutput> create(@Valid @RequestBody CommentInput input) {
+    public ResponseEntity<CommentOutput> create(@Valid @RequestBody CommentInput input, UriComponentsBuilder uriBuilder) {
         Comment comment = commentRepository.saveAndFlush(convertToNewComment(input));
 
-        return ResponseEntity.ok(convertToOutput(comment));
+        var uri = uriBuilder.path("/api/comments/{commentId}").buildAndExpand(comment.getId()).toUri();
+
+        return ResponseEntity.created(uri).body(convertToOutput(comment));
     }
 
     private Comment getCommentById(UUID commentId) {
         return commentRepository.findById(commentId)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(CommentNotFoundException::new);
     }
 
     private CommentOutput convertToOutput(Comment comment) {
