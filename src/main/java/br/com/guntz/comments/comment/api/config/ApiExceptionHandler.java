@@ -1,11 +1,14 @@
 package br.com.guntz.comments.comment.api.config;
 
+import br.com.guntz.comments.comment.api.client.ModerationServiceClientBadGatewayException;
 import br.com.guntz.comments.comment.api.config.exception.CommentNotFoundException;
+import br.com.guntz.comments.comment.api.config.exception.CommentNotValidException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.io.IOException;
 import java.net.ConnectException;
@@ -14,18 +17,46 @@ import java.net.URI;
 import java.nio.channels.ClosedChannelException;
 
 @RestControllerAdvice
-public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
+public class ApiExceptionHandler {
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ProblemDetail handler(MethodArgumentNotValidException ex) {
+
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
+        problemDetail.setTitle("One or more fields are invalid");
+        problemDetail.setType(URI.create("https://guntz.guntz-comments.com.br/errors/fields-invalids"));
+
+        var errors = ex.getFieldErrors().stream()
+                .map(ErrorValidation::new)
+                .toList();
+
+        problemDetail.setProperty("fields", errors);
+
+        return problemDetail;
+    }
 
     @ExceptionHandler(CommentNotFoundException.class)
-    public ProblemDetail handler(CommentNotFoundException e) {
+    public ProblemDetail handler(CommentNotFoundException ex) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
 
         problemDetail.setTitle("Not Found");
-        problemDetail.setDetail(e.getMessage());
+        problemDetail.setDetail(ex.getMessage());
         problemDetail.setType(URI.create("/errors/not-found"));
 
         return problemDetail;
     }
+
+    @ExceptionHandler(CommentNotValidException.class)
+    public ProblemDetail handler(CommentNotValidException ex) {
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.UNPROCESSABLE_ENTITY);
+
+        problemDetail.setTitle("Unprocessable Entity");
+        problemDetail.setDetail(ex.getMessage());
+        problemDetail.setType(URI.create("/errors/unprocessable-entity"));
+
+        return problemDetail;
+    }
+
 
     @ExceptionHandler({
             SocketTimeoutException.class,
@@ -42,15 +73,22 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return problemDetail;
     }
 
-//    @ExceptionHandler(SensorMonitoringClientBadGatewayException.class)
-//    public ProblemDetail handler(SensorMonitoringClientBadGatewayException e){
-//        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_GATEWAY);
-//
-//        problemDetail.setTitle("Bad Gateway");
-//        problemDetail.setDetail(e.getMessage());
-//        problemDetail.setType(URI.create("/errors/bad-gateway"));
-//
-//        return problemDetail;
-//    }
+    private record ErrorValidation(String field, String message) {
+
+        public ErrorValidation(FieldError erro) {
+            this(erro.getField(), erro.getDefaultMessage());
+        }
+    }
+
+    @ExceptionHandler(ModerationServiceClientBadGatewayException.class)
+    public ProblemDetail handler(ModerationServiceClientBadGatewayException e) {
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_GATEWAY);
+
+        problemDetail.setTitle("Bad Gateway");
+        problemDetail.setDetail(e.getMessage());
+        problemDetail.setType(URI.create("/errors/bad-gateway"));
+
+        return problemDetail;
+    }
 
 }

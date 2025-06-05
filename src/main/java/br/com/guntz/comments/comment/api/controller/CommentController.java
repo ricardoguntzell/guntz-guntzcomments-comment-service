@@ -1,20 +1,22 @@
 package br.com.guntz.comments.comment.api.controller;
 
+import br.com.guntz.comments.comment.api.client.ModerationServiceClient;
 import br.com.guntz.comments.comment.api.config.exception.CommentNotFoundException;
-import br.com.guntz.comments.comment.api.model.Comment;
+import br.com.guntz.comments.comment.api.config.exception.CommentNotValidException;
 import br.com.guntz.comments.comment.api.model.CommentInput;
 import br.com.guntz.comments.comment.api.model.CommentOutput;
+import br.com.guntz.comments.comment.api.model.ModerationInput;
+import br.com.guntz.comments.comment.api.model.ModerationOutput;
 import br.com.guntz.comments.comment.common.IdGenerator;
+import br.com.guntz.comments.comment.domain.model.Comment;
 import br.com.guntz.comments.comment.domain.repository.CommentRepository;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.time.OffsetDateTime;
@@ -26,6 +28,7 @@ import java.util.UUID;
 public class CommentController {
 
     private final CommentRepository commentRepository;
+    private final ModerationServiceClient moderationServiceClient;
 
     @GetMapping
     public ResponseEntity<Page<CommentOutput>> findAllComments(@PageableDefault Pageable pageable) {
@@ -44,6 +47,19 @@ public class CommentController {
 
     @PostMapping
     public ResponseEntity<CommentOutput> create(@Valid @RequestBody CommentInput input, UriComponentsBuilder uriBuilder) {
+        UUID uuid = IdGenerator.generateTimeBasedUUID();
+
+        ModerationInput moderationInput = ModerationInput.builder()
+                .commentId(uuid.toString())
+                .text(input.getText())
+                .build();
+
+        ModerationOutput moderationOutput = moderationServiceClient.validatedComment(moderationInput);
+
+        if (!moderationOutput.getApproved()) {
+            throw new CommentNotValidException(moderationOutput.getReason());
+        }
+
         Comment comment = commentRepository.saveAndFlush(convertToNewComment(input));
 
         var uri = uriBuilder.path("/api/comments/{commentId}").buildAndExpand(comment.getId()).toUri();

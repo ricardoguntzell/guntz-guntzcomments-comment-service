@@ -1,4 +1,4 @@
-package br.com.guntz.comments.comment.api.model;
+package br.com.guntz.comments.comment.domain.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
