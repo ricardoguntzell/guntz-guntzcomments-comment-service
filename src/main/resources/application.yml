@@ -1,0 +1,23 @@
+#SERVER
+server.port: '8080'
+
+spring:
+  application.name: comment
+  datasource:
+    username: sa
+    url: jdbc:h2:file:~/guntz-comments-comment-db;CASE_INSENSITIVE_IDENTIFIERS=TRUE;
+    driverClassName: org.h2.Driver
+    password: '123'
+  h2:
+    console:
+      enabled: 'true'
+      settings.web-allow-others: 'true'
+  #JPA
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+    properties:
+      hibernate:
+        format_sql: 'true'
