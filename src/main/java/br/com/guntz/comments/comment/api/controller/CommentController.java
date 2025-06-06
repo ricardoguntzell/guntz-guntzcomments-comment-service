@@ -12,6 +12,7 @@ import br.com.guntz.comments.comment.domain.model.Comment;
 import br.com.guntz.comments.comment.domain.repository.CommentRepository;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
@@ -25,6 +26,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/comments")
+@Slf4j
 public class CommentController {
 
     private final CommentRepository commentRepository;
@@ -39,7 +41,9 @@ public class CommentController {
     }
 
     @GetMapping("/{commentId}")
-    public ResponseEntity<CommentOutput> findAllComments(@PathVariable UUID commentId) {
+    public ResponseEntity<CommentOutput> findCommentById(@PathVariable UUID commentId) {
+        log.info("Executando busca do comentário: {}", commentId);
+
         Comment comment = getCommentById(commentId);
 
         return ResponseEntity.ok(convertToOutput(comment));
@@ -54,10 +58,10 @@ public class CommentController {
                 .text(input.getText())
                 .build();
 
-        ModerationOutput moderationOutput = moderationServiceClient.validatedComment(moderationInput);
+        ModerationOutput moderation = moderationServiceClient.validatedComment(moderationInput);
 
-        if (!moderationOutput.getApproved()) {
-            throw new CommentNotValidException(moderationOutput.getReason());
+        if (!moderation.getApproved()) {
+            throw new CommentNotValidException(moderation.getReason());
         }
 
         Comment comment = commentRepository.saveAndFlush(convertToNewComment(input));

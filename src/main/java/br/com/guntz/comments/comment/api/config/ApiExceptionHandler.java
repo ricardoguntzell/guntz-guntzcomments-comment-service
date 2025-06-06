@@ -1,20 +1,22 @@
 package br.com.guntz.comments.comment.api.config;
 
-import br.com.guntz.comments.comment.api.client.ModerationServiceClientBadGatewayException;
 import br.com.guntz.comments.comment.api.config.exception.CommentNotFoundException;
 import br.com.guntz.comments.comment.api.config.exception.CommentNotValidException;
+import br.com.guntz.comments.comment.api.config.exception.ModerationServiceClientBadGatewayException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 
 import java.io.IOException;
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
 import java.net.URI;
 import java.nio.channels.ClosedChannelException;
+import java.util.Objects;
 
 @RestControllerAdvice
 public class ApiExceptionHandler {
@@ -57,6 +59,18 @@ public class ApiExceptionHandler {
         return problemDetail;
     }
 
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+    public ProblemDetail handler(MethodArgumentTypeMismatchException ex) {
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
+
+        String requiredTypeName = Objects.requireNonNull(ex.getRequiredType().getSimpleName());
+
+        problemDetail.setTitle(String.format("Method Parameter: %s", ex.getName()));
+        problemDetail.setDetail(String.format("is required type: %s", requiredTypeName));
+        problemDetail.setType(URI.create("/errors/method-parameter"));
+
+        return problemDetail;
+    }
 
     @ExceptionHandler({
             SocketTimeoutException.class,

@@ -1,5 +1,6 @@
 package br.com.guntz.comments.comment.api.client;
 
+import br.com.guntz.comments.comment.api.config.exception.ModerationServiceClientBadGatewayException;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.client.ClientHttpRequestFactory;
