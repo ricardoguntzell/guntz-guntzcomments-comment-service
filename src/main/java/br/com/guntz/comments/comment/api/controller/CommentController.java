@@ -1,15 +1,12 @@
 package br.com.guntz.comments.comment.api.controller;
 
-import br.com.guntz.comments.comment.api.client.ModerationServiceClient;
 import br.com.guntz.comments.comment.api.config.exception.CommentNotFoundException;
-import br.com.guntz.comments.comment.api.config.exception.CommentNotValidException;
 import br.com.guntz.comments.comment.api.model.CommentInput;
 import br.com.guntz.comments.comment.api.model.CommentOutput;
-import br.com.guntz.comments.comment.api.model.ModerationInput;
-import br.com.guntz.comments.comment.api.model.ModerationOutput;
 import br.com.guntz.comments.comment.common.IdGenerator;
 import br.com.guntz.comments.comment.domain.model.Comment;
 import br.com.guntz.comments.comment.domain.repository.CommentRepository;
+import br.com.guntz.comments.comment.domain.service.CommentService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,10 +27,12 @@ import java.util.UUID;
 public class CommentController {
 
     private final CommentRepository commentRepository;
-    private final ModerationServiceClient moderationServiceClient;
+    private final CommentService commentService;
 
     @GetMapping
     public ResponseEntity<Page<CommentOutput>> findAllComments(@PageableDefault Pageable pageable) {
+        log.info("Executing Listing the Comments");
+
         var comments = commentRepository.findAll(pageable)
                 .map(this::convertToOutput);
 
@@ -42,7 +41,7 @@ public class CommentController {
 
     @GetMapping("/{commentId}")
     public ResponseEntity<CommentOutput> findCommentById(@PathVariable UUID commentId) {
-        log.info("Executando busca do comentário: {}", commentId);
+        log.info("Executing Search the Comment: {}", commentId);
 
         Comment comment = getCommentById(commentId);
 
@@ -51,24 +50,13 @@ public class CommentController {
 
     @PostMapping
     public ResponseEntity<CommentOutput> create(@Valid @RequestBody CommentInput input, UriComponentsBuilder uriBuilder) {
-        UUID uuid = IdGenerator.generateTimeBasedUUID();
+        Comment commentSaved = commentService.save(convertToNewComment(input));
 
-        ModerationInput moderationInput = ModerationInput.builder()
-                .commentId(uuid.toString())
-                .text(input.getText())
-                .build();
+        var uri = uriBuilder.path("/api/comments/{commentId}").buildAndExpand(commentSaved.getId()).toUri();
 
-        ModerationOutput moderation = moderationServiceClient.validatedComment(moderationInput);
+        log.info("Comment Registred: {}", commentSaved.getId());
 
-        if (!moderation.getApproved()) {
-            throw new CommentNotValidException(moderation.getReason());
-        }
-
-        Comment comment = commentRepository.saveAndFlush(convertToNewComment(input));
-
-        var uri = uriBuilder.path("/api/comments/{commentId}").buildAndExpand(comment.getId()).toUri();
-
-        return ResponseEntity.created(uri).body(convertToOutput(comment));
+        return ResponseEntity.created(uri).body(convertToOutput(commentSaved));
     }
 
     private Comment getCommentById(UUID commentId) {

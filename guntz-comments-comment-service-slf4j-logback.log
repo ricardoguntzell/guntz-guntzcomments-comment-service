@@ -1,0 +1,949 @@
+07/06/2025 12:39:08 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 12:39:08 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 50807 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 12:39:08 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 12:39:08 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 12:39:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 12:39:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface. 
+07/06/2025 12:39:10 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 12:39:10 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:39:10 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 12:39:10 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 12:39:10 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 12:39:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1707 ms 
+07/06/2025 12:39:10 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 12:39:10 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 12:39:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 12:39:11 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 12:39:11 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 12:39:11 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 12:39:11 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 12:39:11 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 12:39:11 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 12:39:12 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 12:39:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:39:13 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 12:39:13 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 12:39:13 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:39:13 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 12:39:13 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.191 seconds (process running for 5.768) 
+07/06/2025 12:46:42 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 12:46:42 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 12:46:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:46:42 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 12:46:42 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 12:46:45 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 12:46:45 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 64530 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 12:46:45 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 12:46:45 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 12:46:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 12:46:47 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interface. 
+07/06/2025 12:46:47 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 12:46:47 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:46:47 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 12:46:47 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 12:46:47 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 12:46:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1640 ms 
+07/06/2025 12:46:47 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 12:46:47 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 12:46:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 12:46:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 12:46:48 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 12:46:48 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 12:46:48 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 12:46:48 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 12:46:48 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 12:46:49 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 12:46:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:46:49 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 12:46:50 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 12:46:50 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:46:50 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 12:46:50 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.911 seconds (process running for 5.719) 
+07/06/2025 12:47:02 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 12:47:02 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 12:47:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:47:02 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 12:47:02 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 12:47:06 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 12:47:06 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 65219 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 12:47:06 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 12:47:06 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 12:47:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 12:47:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface. 
+07/06/2025 12:47:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 12:47:07 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:47:07 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 12:47:07 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 12:47:07 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 12:47:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1538 ms 
+07/06/2025 12:47:08 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 12:47:08 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 12:47:08 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 12:47:08 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 12:47:08 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 12:47:08 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 12:47:08 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 12:47:08 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 12:47:08 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 12:47:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 12:47:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:47:10 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 12:47:10 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 12:47:10 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:47:10 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 12:47:10 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.667 seconds (process running for 5.294) 
+07/06/2025 12:47:33 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 12:47:33 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 12:47:33 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 12:48:03 WARN  b.c.g.c.c.a.c.CommentController - Comentario reprovado prohibited because it contains foul language or hate speech 
+07/06/2025 12:49:33 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 12:49:33 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 12:49:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:49:33 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 12:49:33 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 12:49:35 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 12:49:35 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 69750 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 12:49:35 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 12:49:35 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 12:49:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 12:49:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface. 
+07/06/2025 12:49:37 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 12:49:37 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:49:37 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 12:49:37 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 12:49:37 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 12:49:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1570 ms 
+07/06/2025 12:49:37 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 12:49:37 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 12:49:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 12:49:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 12:49:37 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 12:49:38 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 12:49:38 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 12:49:38 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 12:49:38 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 12:49:38 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 12:49:38 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:49:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 12:49:39 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 12:49:39 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:49:39 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 12:49:39 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.805 seconds (process running for 5.426) 
+07/06/2025 12:49:44 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 12:49:44 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 12:49:44 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 12:49:44 WARN  b.c.g.c.c.a.c.CommentController - Comentario reprovado prohibited because it contains foul language or hate speech 
+07/06/2025 12:53:30 WARN  b.c.g.c.c.a.c.CommentController - Comentario reprovado prohibited because it contains foul language or hate speech 
+07/06/2025 12:53:34 INFO  b.c.g.c.c.a.c.CommentController - Comentario registrado 01974b18-ee7d-7c80-985a-566cb4fd725a 
+07/06/2025 12:53:38 WARN  b.c.g.c.c.a.c.CommentController - Comentario reprovado prohibited because it contains foul language or hate speech 
+07/06/2025 12:53:50 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 12:53:50 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 12:53:50 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:53:50 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 12:53:50 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 12:53:54 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 12:53:54 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 77652 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 12:53:54 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 12:53:54 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 12:53:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 12:53:55 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface. 
+07/06/2025 12:53:56 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 12:53:56 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:53:56 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 12:53:56 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 12:53:56 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 12:53:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1684 ms 
+07/06/2025 12:53:56 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 12:53:56 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 12:53:56 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 12:53:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 12:53:57 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 12:53:57 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 12:53:57 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 12:53:57 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 12:53:57 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 12:53:58 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 12:53:58 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 12:53:58 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 12:53:59 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 12:53:59 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 12:53:59 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 12:53:59 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.831 seconds (process running for 5.397) 
+07/06/2025 12:54:04 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 12:54:04 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 12:54:04 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 12:54:05 INFO  b.c.g.c.c.a.c.CommentController - Comment Registred: 01974b19-655b-73c8-8325-81b7578edf67 
+07/06/2025 12:54:10 WARN  b.c.g.c.c.a.c.CommentController - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 12:54:45 INFO  b.c.g.c.c.a.c.CommentController - Executing Listing the Comments 
+07/06/2025 12:54:46 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+ 
+07/06/2025 13:07:17 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:07:17 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:07:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:07:17 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:07:17 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:07:21 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:07:21 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 102342 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:07:21 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:07:21 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:07:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:07:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface. 
+07/06/2025 13:07:22 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:07:22 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:07:22 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:07:22 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:07:22 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:07:22 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1595 ms 
+07/06/2025 13:07:22 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:07:23 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:07:23 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:07:23 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:07:23 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:07:23 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:07:23 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:07:23 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:07:23 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:07:24 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:07:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:07:25 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:07:25 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:07:25 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:07:25 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:07:25 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.786 seconds (process running for 5.412) 
+07/06/2025 13:07:29 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:07:29 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:07:29 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:07:29 INFO  b.c.g.c.c.a.c.CommentController - Executing Listing the Comments 
+07/06/2025 13:07:29 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+ 
+07/06/2025 13:07:32 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:07:37 INFO  b.c.g.c.c.a.c.CommentController - Comment Registred: 01974b25-c8f1-71ca-9092-d134152197bf 
+07/06/2025 13:07:56 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:15:35 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:15:35 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:15:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:15:35 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:15:35 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:15:39 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:15:39 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 116749 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:15:39 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:15:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:15:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface. 
+07/06/2025 13:15:40 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:15:40 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:15:40 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:15:40 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:15:40 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:15:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1505 ms 
+07/06/2025 13:15:41 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:15:41 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:15:41 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:15:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:15:41 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:15:41 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:15:41 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:15:41 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:15:41 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:15:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:15:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:15:43 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:15:43 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:15:43 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:15:43 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:15:43 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.605 seconds (process running for 5.195) 
+07/06/2025 13:15:46 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:15:46 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:15:46 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:19:23 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:19:23 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:19:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:19:23 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:19:23 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:19:26 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:19:26 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 123489 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:19:26 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:19:26 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:19:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:19:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface. 
+07/06/2025 13:19:27 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:19:28 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:19:28 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:19:28 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:19:28 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:19:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1724 ms 
+07/06/2025 13:19:28 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:19:28 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:19:28 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:19:28 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:19:28 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:19:28 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:19:28 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:19:28 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:19:28 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:19:29 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:19:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:19:30 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:19:30 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:19:30 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:19:30 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:19:30 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.97 seconds (process running for 5.622) 
+07/06/2025 13:19:58 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:19:58 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:19:58 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:19:59 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:20:10 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:20:10 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:20:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:20:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:20:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:20:12 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:20:12 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 124745 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:20:12 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:20:12 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:20:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:20:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface. 
+07/06/2025 13:20:14 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:20:14 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:20:14 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:20:14 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:20:14 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:20:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1502 ms 
+07/06/2025 13:20:14 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:20:14 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:20:14 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:20:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:20:14 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:20:14 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:20:14 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:20:14 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:20:14 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:20:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:20:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:20:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:20:16 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:20:16 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:20:16 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:20:16 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.641 seconds (process running for 5.337) 
+07/06/2025 13:20:27 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:20:27 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:20:27 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:20:27 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:20:43 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:20:43 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:20:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:20:43 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:20:43 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:20:45 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:20:45 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 125692 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:20:45 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:20:45 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:20:46 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interface. 
+07/06/2025 13:20:47 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:20:47 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:20:47 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:20:47 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:20:47 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:20:47 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms 
+07/06/2025 13:20:47 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:20:47 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:20:47 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:20:48 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:20:48 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:20:48 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:20:48 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:20:48 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:20:48 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:20:49 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:20:49 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:20:50 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:20:50 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:20:50 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:20:50 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:20:50 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.82 seconds (process running for 6.499) 
+07/06/2025 13:21:00 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:21:00 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:21:00 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:21:00 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:21:28 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:21:28 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:21:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:21:28 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:21:28 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:21:34 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:21:34 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 127386 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:21:34 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:21:34 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:21:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:21:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface. 
+07/06/2025 13:21:37 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:21:37 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:21:37 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:21:37 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:21:37 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:21:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2143 ms 
+07/06/2025 13:21:37 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:21:37 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:21:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:21:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:21:37 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:21:38 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:21:38 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:21:38 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:21:38 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:21:39 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:21:39 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:21:39 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:21:39 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:21:39 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:21:39 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:21:39 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.686 seconds (process running for 6.722) 
+07/06/2025 13:21:42 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:21:42 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:21:42 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:21:43 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:21:59 WARN  b.c.g.c.c.d.s.CommentService - Comment Prohibited: prohibited because it contains foul language or hate speech 
+07/06/2025 13:22:44 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:22:44 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:22:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:22:44 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:22:44 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:26:44 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:26:44 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 136699 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:26:44 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:26:44 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:26:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:26:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface. 
+07/06/2025 13:26:45 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:26:45 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:26:45 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:26:45 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:26:45 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:26:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1418 ms 
+07/06/2025 13:26:45 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:26:45 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:26:45 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:26:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:26:46 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:26:46 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:26:46 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:26:46 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:26:46 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:26:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:26:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:26:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:26:48 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:26:48 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:26:48 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:26:48 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.351 seconds (process running for 4.927) 
+07/06/2025 13:26:57 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:26:57 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:26:57 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:30:44 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:30:44 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:30:44 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:30:44 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:30:44 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:31:24 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:31:24 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 145119 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:31:24 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:31:24 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:31:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:31:25 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface. 
+07/06/2025 13:31:26 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:31:26 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:31:26 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:31:26 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:31:26 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:31:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1718 ms 
+07/06/2025 13:31:26 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:31:26 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:31:26 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:31:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:31:26 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:31:27 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:31:27 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:31:27 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:31:27 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:31:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:31:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:31:28 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:31:29 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:31:29 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:31:29 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:31:29 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.252 seconds (process running for 5.872) 
+07/06/2025 13:31:34 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:31:34 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:31:34 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:31:35 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'] with root cause 
+java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'
+	at org.springdoc.core.service.GenericResponseService.lambda$getGenericMapResponse$8(GenericResponseService.java:706)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+	at org.springdoc.core.service.GenericResponseService.getGenericMapResponse(GenericResponseService.java:708)
+	at org.springdoc.core.service.GenericResponseService.build(GenericResponseService.java:247)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:499)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:676)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$calculatePath$11(OpenApiResource.java:220)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.calculatePath(OpenApiResource.java:201)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$getPaths$2(OpenApiResource.java:171)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.getPaths(OpenApiResource.java:150)
+	at org.springdoc.api.AbstractOpenApiResource.getOpenApi(AbstractOpenApiResource.java:353)
+	at org.springdoc.webmvc.api.OpenApiResource.openapiJson(OpenApiResource.java:125)
+	at org.springdoc.webmvc.api.OpenApiWebMvcResource.openapiJson(OpenApiWebMvcResource.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+07/06/2025 13:32:18 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'] with root cause 
+java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'
+	at org.springdoc.core.service.GenericResponseService.lambda$getGenericMapResponse$8(GenericResponseService.java:706)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+	at org.springdoc.core.service.GenericResponseService.getGenericMapResponse(GenericResponseService.java:708)
+	at org.springdoc.core.service.GenericResponseService.build(GenericResponseService.java:247)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:499)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:676)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$calculatePath$11(OpenApiResource.java:220)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.calculatePath(OpenApiResource.java:201)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$getPaths$2(OpenApiResource.java:171)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.getPaths(OpenApiResource.java:150)
+	at org.springdoc.api.AbstractOpenApiResource.getOpenApi(AbstractOpenApiResource.java:353)
+	at org.springdoc.webmvc.api.OpenApiResource.openapiJson(OpenApiResource.java:125)
+	at org.springdoc.webmvc.api.OpenApiWebMvcResource.openapiJson(OpenApiWebMvcResource.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+07/06/2025 13:32:59 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:32:59 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:32:59 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:32:59 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:32:59 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:34:19 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:34:20 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 150932 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:34:20 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:34:20 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:34:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:34:23 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 190 ms. Found 1 JPA repository interface. 
+07/06/2025 13:34:24 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:34:24 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:34:24 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:34:24 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:34:25 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:34:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4872 ms 
+07/06/2025 13:34:25 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:34:25 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:34:25 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:34:26 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:34:26 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:34:26 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:34:26 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:34:26 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:34:26 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:34:28 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:34:28 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:34:29 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:34:29 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:34:29 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:34:29 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:34:30 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 10.965 seconds (process running for 12.437) 
+07/06/2025 13:34:56 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:34:56 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:34:56 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:34:57 INFO  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 361 ms 
+07/06/2025 13:43:10 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:43:10 INFO  o.a.c.h.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:43:10 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:43:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:43:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:43:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:43:16 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:43:16 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 167889 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:43:16 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:43:16 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:43:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:43:17 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface. 
+07/06/2025 13:43:18 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:43:18 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:43:18 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:43:18 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:43:18 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:43:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2047 ms 
+07/06/2025 13:43:18 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:43:18 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:43:18 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:43:19 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:43:19 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:43:19 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:43:19 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:43:19 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:43:19 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:43:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:43:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:43:21 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:43:21 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:43:21 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:43:21 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:43:21 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.358 seconds (process running for 6.004) 
+07/06/2025 13:43:28 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:43:28 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:43:28 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:43:29 INFO  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 334 ms 
+07/06/2025 13:44:10 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:44:10 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:44:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:44:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:44:10 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:44:13 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:44:14 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 169849 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:44:14 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:44:14 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:44:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:44:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface. 
+07/06/2025 13:44:15 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:44:15 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:44:15 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:44:15 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:44:15 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:44:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1674 ms 
+07/06/2025 13:44:15 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:44:16 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:44:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:44:16 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:44:16 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:44:16 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:44:16 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:44:16 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:44:16 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:44:17 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:44:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:44:18 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:44:18 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:44:18 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:44:18 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:44:18 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.02 seconds (process running for 5.708) 
+07/06/2025 13:44:20 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:44:20 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:44:20 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:44:20 INFO  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 334 ms 
+07/06/2025 13:44:40 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:44:40 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:44:40 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:44:40 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:44:40 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:44:44 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:44:44 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 170768 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:44:44 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:44:44 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:44:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:44:45 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface. 
+07/06/2025 13:44:45 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:44:45 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:44:45 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:44:45 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:44:45 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:44:45 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1694 ms 
+07/06/2025 13:44:46 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:44:46 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:44:46 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:44:46 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:44:46 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:44:46 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:44:46 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:44:46 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:44:46 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:44:47 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:44:47 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:44:48 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:44:48 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:44:48 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:44:48 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:44:48 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 4.973 seconds (process running for 5.677) 
+07/06/2025 13:45:56 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:45:56 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:45:56 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 2 ms 
+07/06/2025 13:45:57 INFO  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 520 ms 
+07/06/2025 13:46:02 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 13:46:02 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 13:46:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:46:02 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 13:46:02 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 
+07/06/2025 13:46:05 INFO  o.h.v.i.u.Version - HV000001: Hibernate Validator 8.0.2.Final 
+07/06/2025 13:46:05 INFO  b.c.g.c.c.CommentApplication - Starting CommentApplication using Java 17.0.15 with PID 173489 (/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service/target/classes started by guntz in /home/guntz/dev/projects/spring/ems/guntz-comments) 
+07/06/2025 13:46:05 DEBUG b.c.g.c.c.CommentApplication - Running with Spring Boot v3.5.0, Spring v6.2.7 
+07/06/2025 13:46:05 INFO  b.c.g.c.c.CommentApplication - No active profile set, falling back to 1 default profile: "default" 
+07/06/2025 13:46:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+07/06/2025 13:46:06 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interface. 
+07/06/2025 13:46:07 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port 8080 (http) 
+07/06/2025 13:46:07 INFO  o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:46:07 INFO  o.a.c.c.StandardService - Starting service [Tomcat] 
+07/06/2025 13:46:07 INFO  o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41] 
+07/06/2025 13:46:07 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext 
+07/06/2025 13:46:07 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1694 ms 
+07/06/2025 13:46:07 INFO  o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+07/06/2025 13:46:07 INFO  o.h.Version - HHH000412: Hibernate ORM core version 6.6.15.Final 
+07/06/2025 13:46:07 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled 
+07/06/2025 13:46:07 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer 
+07/06/2025 13:46:07 INFO  c.z.h.HikariDataSource - HikariPool-1 - Starting... 
+07/06/2025 13:46:08 INFO  c.z.h.p.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/guntz-comments-comment-db user=SA 
+07/06/2025 13:46:08 INFO  c.z.h.HikariDataSource - HikariPool-1 - Start completed. 
+07/06/2025 13:46:08 WARN  o.h.o.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+07/06/2025 13:46:08 INFO  o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown 
+07/06/2025 13:46:09 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+07/06/2025 13:46:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 13:46:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+07/06/2025 13:46:10 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/guntz-comments-comment-db' 
+07/06/2025 13:46:10 INFO  o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+07/06/2025 13:46:10 INFO  o.s.b.w.e.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/' 
+07/06/2025 13:46:10 INFO  b.c.g.c.c.CommentApplication - Started CommentApplication in 5.05 seconds (process running for 5.709) 
+07/06/2025 13:46:13 INFO  o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+07/06/2025 13:46:13 INFO  o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+07/06/2025 13:46:13 INFO  o.s.w.s.DispatcherServlet - Completed initialization in 1 ms 
+07/06/2025 13:46:13 INFO  o.s.a.AbstractOpenApiResource - Init duration for springdoc-openapi is: 361 ms 
+07/06/2025 13:53:01 INFO  b.c.g.c.c.a.c.CommentController - Executing Search the Comment: 01973d43-ee44-7cf1-8fad-153bfbb69d53 
+07/06/2025 14:23:41 INFO  o.s.b.w.e.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete 
+07/06/2025 14:23:41 INFO  o.s.b.w.e.t.GracefulShutdown - Graceful shutdown complete 
+07/06/2025 14:23:41 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+07/06/2025 14:23:41 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+07/06/2025 14:23:41 INFO  c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed. 

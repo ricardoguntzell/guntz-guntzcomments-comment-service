@@ -1,0 +1,25 @@
+<configuration>
+
+    <property name="PROJECT_HOME" value="/home/guntz/dev/projects/spring/ems/guntz-comments/microsservices/comment-service" />
+
+    <appender name="saidaPadrao" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{dd/MM/yyyy HH:mm:ss} %highlight(%-5level) %cyan(%logger{15}) - %message %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="arquivo" class="ch.qos.logback.core.FileAppender">
+        <file>${PROJECT_HOME}/guntz-comments-comment-service-slf4j-logback.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date{dd/MM/yyyy HH:mm:ss} %-5level %logger{15} - %message %n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="br.com.guntz.comments.comment" level="TRACE" />
+
+    <root level="INFO">
+        <appender-ref ref="saidaPadrao" />
+        <appender-ref ref="arquivo" />
+    </root>
+</configuration>
